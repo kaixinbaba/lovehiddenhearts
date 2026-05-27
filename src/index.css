@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-primary: #e91e63;
+  --color-rose-light: #f06292;
+  --color-rose-pale: #f48fb1;
+  --color-rose-dark: #880e4f;
+  --color-love-accent: #ffd54f;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #fff0f3 0%, #fce4ec 50%, #f8bbd0 100%);
+  min-height: 100vh;
+}
