@@ -60,10 +60,10 @@ export const tips = [
 ]
 
 export const relatedPages = [
-  { title: 'Love Hidden Hearts Unblocked' },
-  { title: 'Love Hidden Hearts No Download' },
-  { title: 'Love Hidden Hearts Fullscreen' },
-  { title: 'How to Play Love Hidden Hearts' },
+  { title: 'Love Hidden Hearts Unblocked', path: '/unblocked' },
+  { title: 'Love Hidden Hearts No Download', path: '/no-download' },
+  { title: 'Love Hidden Hearts Fullscreen', path: '/fullscreen' },
+  { title: 'How to Play Love Hidden Hearts', path: '/how-to-play' },
 ]
 
 export const faqs = [

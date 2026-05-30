@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { relatedPages } from '../data'
 
 function RelatedPages() {
@@ -7,20 +8,21 @@ function RelatedPages() {
         <h2 className="text-3xl font-bold text-rose-dark mb-2">
           More Ways to Play
         </h2>
-        <p className="text-gray-500 mb-8">New game pages coming soon</p>
+        <p className="text-gray-500 mb-8">Explore more ways to enjoy Love Hidden Hearts</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {relatedPages.map((page) => (
-            <div
-              key={page.title}
-              className="rounded-xl border-2 border-dashed border-gray-300 bg-white/50 px-6 py-8 text-center cursor-not-allowed select-none"
+            <Link
+              key={page.path}
+              to={page.path}
+              className="rounded-xl border-2 border-pink-200 bg-white/80 px-6 py-8 text-center hover:border-rose-primary hover:shadow-lg hover:bg-rose-50 transition-all duration-200 group"
             >
-              <span className="text-sm font-medium text-gray-400 uppercase tracking-wide">
-                Coming Soon
-              </span>
-              <h3 className="mt-2 text-lg font-semibold text-gray-400">
+              <h3 className="text-lg font-semibold text-rose-dark group-hover:text-rose-primary transition-colors">
                 {page.title}
               </h3>
-            </div>
+              <span className="mt-2 inline-block text-sm text-rose-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                Learn More →
+              </span>
+            </Link>
           ))}
         </div>
       </div>
